@@ -1,0 +1,52 @@
+.addCatForm{
+    border: 1px solid $primary-clr;
+    width: 40vw;
+    height: 22vh;
+    margin: 2% auto;
+    h1{
+        font-size: 1.4rem;
+        color: $primary-clr;
+    }
+
+    form{
+
+        *{
+            &:not(:last-child){
+            margin-bottom: 1rem;
+            }
+        }
+
+        input{
+            border: 1px solid $primary-clr;
+            color: $primary-clr;
+        }
+
+        ::placeholder{
+            color: $primary-clr;
+            opacity: 1;
+        }
+
+        button{
+            border: 1px solid $primary-clr;
+            background-color: $primary-clr;
+            border-radius: 0.2rem;
+            text-transform: uppercase;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .cancelCategory{
+            border: 1px solid $primary-clr;
+            background-color: $primary-clr;
+            border-radius: 0.2rem;
+            text-transform: uppercase;
+            padding: 0.2rem 0.3rem;
+            cursor: pointer;
+            position: absolute;
+            left: 62.5%;
+            top: 28%;
+            transform: translate(100%, 100%);
+            font-size: 0.8rem;
+        }
+    }
+}

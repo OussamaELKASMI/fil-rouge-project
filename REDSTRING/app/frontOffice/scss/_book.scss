@@ -1,0 +1,107 @@
+.storeSingleBook{
+    width: 72vw;
+    min-height: 74vh;
+    height: fit-content;
+    margin: 0% auto;
+
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+
+    &_book{
+        border: 1px solid $frontEnd-clr;
+        height: fit-content;
+        width: 100%;
+        padding: 0.5%;
+        position: relative;
+        
+        &_image{
+            width: 15vw;
+            height: fit-content;
+            margin-right: 1.5rem;
+            
+            img{
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+
+        &_details{
+            min-height: 39vh;
+            height: fit-content;
+            width: 70vw;
+            .name{
+                p{
+                    font-size: 1.4rem;
+                }
+            }
+
+            .author{
+                margin-bottom: 1.5rem;
+                p{
+                    
+                }
+            }
+
+            .description{
+                margin-bottom: 12%;
+                span{
+                    margin-right: 0.6rem;
+                    color: $frontEnd-clr-drk;
+                    font-style: italic;
+                }
+            }
+
+            .bookOptions{
+                border: 1px solid $frontEnd-clr;
+                width: fit-content;
+                padding: 0.3% 1.5%;
+                border-radius: 0.2rem;
+                // cursor: pointer;
+            }
+
+            .quantity{
+                position: absolute;
+                left: 90%;
+                top: 5%;
+                width: fit-content;
+                font-size: 1.2rem;
+                color: #007600;
+            }
+
+            .actionBtns{
+                width: 12vw;
+                position: absolute;
+                transform: translate(-108%, -135%);
+                left: 100%;
+                top: 100%;
+                cursor: pointer;
+
+                button{
+                    background-color: transparent;
+                    border: none;
+                    color: #fff;
+                    font-weight: 300;
+                    font-size: 0.9rem;
+                    padding: 0;
+                    margin: 0;
+                    width: fit-content;
+                    height: fit-content;
+                    cursor: pointer;
+                }
+
+                .buyNow, .addToBag{
+                    border: 1px solid $frontEnd-clr;
+                    width: fit-content;
+                    padding: 2% 5%;
+                    border-radius: 0.2rem;
+                    background-color: $frontEnd-clr;
+                    color: #fff;
+                    font-weight: 300;
+                }
+                
+            }
+        }
+    }
+}

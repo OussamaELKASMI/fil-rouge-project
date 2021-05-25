@@ -1,0 +1,26 @@
+In order to put this app to work, do the following steps.
+
+STEP 1:
+
+Import the data base to your phpmyadmin panel.
+
+STEP 2:
+
+Copy the "REDSTRING" folder to your xampp>htdocs.
+
+STEP 3:
+
+In your browser access to: localhost/REDSTRING/app/frontOffice/index  to view the front end part !!
+
+In your browser access to: localhost/REDSTRING/app/backOffice/intro  to view the front end part !!
+
+
+IMPORTANT!!!
+
+To log in as an admin use these credentials : 
+
+email: oussa@gmail.com
+password: oussa
+
+
+AND THANK YOU.

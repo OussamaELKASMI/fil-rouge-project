@@ -1,0 +1,1351 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+  font-family: 'Mukta', sans-serif;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  line-height: 1.3;
+  font-family: 'Mukta', sans-serif;
+  overflow-x: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
+.flex-jc-sa {
+  justify-content: space-around;
+}
+
+.flex-jc-c {
+  justify-content: center;
+}
+
+.flex-ai-c {
+  align-items: center;
+}
+
+.flex-ai-fe {
+  align-items: flex-end;
+}
+
+.flex-jc-fs {
+  justify-content: flex-start;
+}
+
+.flex-jc-fe {
+  justify-content: flex-end;
+}
+
+.flex-fd-r {
+  flex-direction: row;
+}
+
+.flex-fd-c {
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 300;
+}
+
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 63.937em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+.transition {
+  transition-duration: 0.3s;
+}
+
+.logoo {
+  width: 50px;
+}
+
+.logoLink {
+  width: 50px;
+  margin-top: 5%;
+}
+
+.socials {
+  width: 22px;
+  height: 22px;
+}
+
+.homeIcon {
+  width: 80px;
+  height: 80px;
+}
+
+.cursor-p {
+  cursor: pointer;
+}
+
+.navigation_navBar {
+  border-bottom: 1px solid #2699FB;
+  height: 70px;
+  padding: 0 2.5rem;
+}
+
+.navigation_navBar h1 {
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.navigation_navBar h3 {
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.navigation_navBar_websitePreview {
+  width: 10vw;
+}
+
+.navigation_navBar_websitePreview #logoutAdmin {
+  color: #2699FB;
+}
+
+.home_navBar {
+  border-bottom: 1px solid #2699FB;
+  height: 70px;
+  padding: 0 2.5rem;
+}
+
+.home_navBar h1 {
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.home_navBar h3 {
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.home_middle {
+  height: 75vh;
+}
+
+.home_middle .conts {
+  border: 1px solid #2699FB;
+  width: 15vw;
+  height: 5rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.home_middle .conts p {
+  color: #2699FB;
+  font-weight: 600;
+}
+
+.categories {
+  height: fit-content;
+}
+
+.categories_top {
+  height: 10vh;
+  width: 100%;
+  padding: 1rem 2.5rem;
+}
+
+.categories_top .backArrow {
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.categories_top .backArrow img {
+  width: 60%;
+  height: 60%;
+}
+
+.categories_top .current {
+  width: 30%;
+}
+
+.categories_top .current p {
+  color: #2699FB;
+  font-size: 1.1rem;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+}
+
+.categories_top .searchBar {
+  width: 80%;
+}
+
+.categories_top .searchBar form input {
+  border: 1px solid #2699FB;
+  color: #2699FB;
+  outline: none;
+}
+
+.categories_top .searchBar form ::placeholder {
+  color: #2699FB;
+  opacity: 1;
+}
+
+.categories_top .searchBar form button {
+  float: right;
+  height: 100%;
+  width: fit-content;
+  border: 1px solid #2699FB;
+  border-left: none;
+  cursor: pointer;
+}
+
+.categories_top .searchBar form button img {
+  width: 90%;
+}
+
+.categories_top .addIcon {
+  width: 5%;
+  height: 100%;
+}
+
+.categories_top .addIcon a img {
+  width: 60%;
+  height: 60%;
+}
+
+.categories_middle {
+  height: 75vh;
+}
+
+.categories_middle .conts {
+  border: 1px solid #2699FB;
+  width: 15vw;
+  height: 5rem;
+  border-radius: 0.3rem;
+  position: relative;
+}
+
+.categories_middle .conts p {
+  color: #2699FB;
+  font-weight: 600;
+}
+
+.categories_middle .conts .deleteCategory {
+  border: none;
+  position: absolute;
+  left: 90%;
+  top: 6%;
+}
+
+.categories_middle .conts .deleteCategory a {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.categories_middle .conts .deleteCategory a img {
+  width: 80%;
+  height: 80%;
+}
+
+.addCatForm {
+  border: 1px solid #2699FB;
+  width: 40vw;
+  height: 22vh;
+  margin: 2% auto;
+}
+
+.addCatForm h1 {
+  font-size: 1.4rem;
+  color: #2699FB;
+}
+
+.addCatForm form *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.addCatForm form input {
+  border: 1px solid #2699FB;
+  color: #2699FB;
+}
+
+.addCatForm form ::placeholder {
+  color: #2699FB;
+  opacity: 1;
+}
+
+.addCatForm form button {
+  border: 1px solid #2699FB;
+  background-color: #2699FB;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.addCatForm form .cancelCategory {
+  border: 1px solid #2699FB;
+  background-color: #2699FB;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  padding: 0.2rem 0.3rem;
+  cursor: pointer;
+  position: absolute;
+  left: 62.5%;
+  top: 28%;
+  transform: translate(100%, 100%);
+  font-size: 0.8rem;
+}
+
+.surf {
+  height: fit-content;
+}
+
+.surf_top {
+  height: 10vh;
+  width: 100%;
+  padding: 1rem 2.5rem;
+}
+
+.surf_top .backArrow {
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.surf_top .backArrow img {
+  width: 60%;
+  height: 60%;
+}
+
+.surf_top .current {
+  width: 30%;
+}
+
+.surf_top .current p {
+  color: #2699FB;
+  font-size: 1.1rem;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+}
+
+.surf_top .searchBar {
+  width: 80%;
+}
+
+.surf_top .searchBar form input {
+  border: 1px solid #2699FB;
+  color: #2699FB;
+  outline: none;
+}
+
+.surf_top .searchBar form ::placeholder {
+  color: #2699FB;
+  opacity: 1;
+}
+
+.surf_top .searchBar form button {
+  float: right;
+  height: 100%;
+  width: fit-content;
+  border: 1px solid #2699FB;
+  border-left: none;
+  cursor: pointer;
+}
+
+.surf_top .searchBar form button img {
+  width: 90%;
+}
+
+.surf_top .addIcon {
+  width: 5%;
+  height: 100%;
+}
+
+.surf_top .addIcon a img {
+  width: 60%;
+  height: 60%;
+}
+
+.booksContainer {
+  padding: 0 2.5rem;
+}
+
+.booksContainer_book {
+  border: 1px solid #2699FB;
+  width: 13vw;
+  height: fit-content;
+  padding: 0% 0.3rem;
+  position: relative;
+}
+
+.booksContainer_book:not(:last-child) {
+  margin-right: 0.8rem;
+}
+
+.booksContainer_book * {
+  padding: 0%;
+  margin: 0%;
+}
+
+.booksContainer_book_image {
+  height: 69%;
+  cursor: pointer;
+}
+
+.booksContainer_book_image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.booksContainer_book_title {
+  height: fit-content;
+  font-size: 1.05rem;
+}
+
+.booksContainer_book_author {
+  height: 8%;
+  font-size: 0.9rem;
+}
+
+.booksContainer_book_price {
+  height: 10%;
+  font-size: 1.1rem;
+}
+
+.booksContainer_book_ud {
+  height: fit-content;
+  position: absolute;
+  top: -5%;
+  left: 76%;
+  width: 26%;
+  height: fit-content;
+}
+
+.booksContainer_book_ud .update, .booksContainer_book_ud .delete {
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.booksContainer_book_ud .update img, .booksContainer_book_ud .delete img {
+  width: 15px;
+}
+
+.addBookForm {
+  border: 1px solid #2699FB;
+  width: 30vw;
+  margin: 2% auto;
+  padding: 1% 0;
+  position: relative;
+}
+
+.addBookForm * {
+  margin: 0%;
+  padding: 0%;
+}
+
+.addBookForm h1 {
+  font-size: 1.5rem;
+  color: #2699FB;
+}
+
+.addBookForm form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.addBookForm form input {
+  border: 1px solid #2699FB;
+  outline: none;
+  text-align: center;
+}
+
+.addBookForm form > div:not(:last-child) {
+  margin-bottom: 0.6rem;
+}
+
+.addBookForm form .custom-file label {
+  cursor: pointer;
+  background-color: lightgray;
+  border-radius: 0.2rem;
+  padding: 0 0.5rem;
+}
+
+.addBookForm form .custom-file input {
+  background-color: transparent;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.addBookForm form button {
+  border: 1px solid #2699FB;
+  background-color: #2699FB;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+  margin: 0% auto;
+  cursor: pointer;
+}
+
+.addBookForm form .cancelBook {
+  position: absolute;
+  transform: translate(100%, 100%);
+  left: 73%;
+  top: 82%;
+  background-color: #2699FB;
+  border-radius: 0.2rem;
+  padding: 0% 0.5rem;
+}
+
+.bookContainer {
+  border: 1px solid #2699FB;
+  width: 50vw;
+  height: fit-content;
+  margin: 4% auto;
+  position: relative;
+}
+
+.bookContainer .image_book {
+  width: 15vw;
+  height: fit-content;
+}
+
+.bookContainer .image_book img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.bookContainer .details_book {
+  margin-left: 2rem;
+}
+
+.bookContainer .details_book span {
+  margin-right: 0.5rem;
+  color: #2699FB;
+}
+
+.bookContainer .details_book p {
+  font-size: 1.05rem;
+}
+
+.bookContainer .book_ud {
+  height: fit-content;
+  position: absolute;
+  top: 92%;
+  left: 82%;
+  width: 18%;
+  height: fit-content;
+}
+
+.bookContainer .book_ud .update, .bookContainer .book_ud .delete {
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  background-color: #2699FB;
+  padding: 0 0.4rem;
+  border-radius: 0.2rem;
+}
+
+.bookContainer .book_ud .update img, .bookContainer .book_ud .delete img {
+  width: 15px;
+}
+
+.clientsContainer {
+  padding: 0 2.5rem;
+}
+
+.clientsContainer_client {
+  border: 1px solid #2699FB;
+  width: 13vw;
+  height: fit-content;
+  padding: 0% 0.3rem;
+  position: relative;
+}
+
+.clientsContainer_client:not(:last-child) {
+  margin-right: 0.8rem;
+}
+
+.clientsContainer_client * {
+  padding: 0%;
+  margin: 0%;
+}
+
+.clientsContainer_client_image {
+  height: 69%;
+  cursor: pointer;
+}
+
+.clientsContainer_client_image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.clientsContainer_client_fullName {
+  height: fit-content;
+  font-size: 1.05rem;
+}
+
+.clientsContainer_client_fullName #prename {
+  margin-right: 0.3rem;
+  float: right;
+}
+
+.clientsContainer_client_ud {
+  height: fit-content;
+  position: absolute;
+  top: -8%;
+  left: 76%;
+  width: 26%;
+  height: fit-content;
+}
+
+.clientsContainer_client_ud .update, .clientsContainer_client_ud .delete {
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.clientsContainer_client_ud .update a img, .clientsContainer_client_ud .delete a img {
+  width: 15px;
+}
+
+.addClientForm {
+  border: 1px solid #2699FB;
+  width: 30vw;
+  margin: 2% auto;
+  padding: 1% 0;
+  position: relative;
+}
+
+.addClientForm * {
+  margin: 0%;
+  padding: 0%;
+}
+
+.addClientForm h1 {
+  font-size: 1.5rem;
+  color: #2699FB;
+}
+
+.addClientForm form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.addClientForm form input {
+  border: 1px solid #2699FB;
+  outline: none;
+  text-align: center;
+}
+
+.addClientForm form > div:not(:last-child) {
+  margin-bottom: 0.6rem;
+}
+
+.addClientForm form .custom-file label {
+  cursor: pointer;
+  background-color: lightgray;
+  border-radius: 0.2rem;
+  padding: 0 0.5rem;
+}
+
+.addClientForm form .custom-file input {
+  background-color: transparent;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.addClientForm form button {
+  border: 1px solid #2699FB;
+  background-color: #2699FB;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+  margin: 0% auto;
+  cursor: pointer;
+}
+
+.addClientForm form .cancelClient {
+  position: absolute;
+  transform: translate(100%, 100%);
+  left: 74%;
+  top: 87.5%;
+  background-color: #2699FB;
+  border-radius: 0.2rem;
+  padding: 0% 0.5rem;
+}
+
+.clientContainer {
+  border: 1px solid #2699FB;
+  width: 50vw;
+  height: fit-content;
+  margin: 4% auto;
+  position: relative;
+}
+
+.clientContainer .image_client {
+  width: 15vw;
+  height: fit-content;
+}
+
+.clientContainer .image_client img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.clientContainer .details_client {
+  margin-left: 2rem;
+}
+
+.clientContainer .details_client span {
+  margin-right: 0.5rem;
+  color: #2699FB;
+}
+
+.clientContainer .details_client p {
+  font-size: 1.05rem;
+}
+
+.clientContainer .client_ud {
+  height: fit-content;
+  position: absolute;
+  top: 92%;
+  left: 82%;
+  width: 18%;
+  height: fit-content;
+}
+
+.clientContainer .client_ud .update, .clientContainer .client_ud .delete {
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  background-color: #2699FB;
+  padding: 0 0.4rem;
+  border-radius: 0.2rem;
+}
+
+.clientContainer .client_ud .update img, .clientContainer .client_ud .delete img {
+  width: 15px;
+}
+
+.signUpForm {
+  border: 1px solid #2699FB;
+  width: 30vw;
+  margin: 2% auto;
+  padding: 1% 0;
+  position: relative;
+}
+
+.signUpForm * {
+  margin: 0%;
+  padding: 0%;
+}
+
+.signUpForm h1 {
+  font-size: 1.5rem;
+  color: #2699FB;
+  margin-bottom: 0.5rem;
+}
+
+.signUpForm form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signUpForm form input {
+  border: 1px solid #2699FB;
+  outline: none;
+  text-align: center;
+}
+
+.signUpForm form > div:not(:last-child) {
+  margin-bottom: 0.6rem;
+}
+
+.signUpForm form .custom-file label {
+  cursor: pointer;
+  background-color: lightgray;
+  border-radius: 0.2rem;
+  padding: 0 0.5rem;
+}
+
+.signUpForm form .custom-file input {
+  background-color: transparent;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.signUpForm form button {
+  border: 1px solid #2699FB;
+  background-color: #2699FB;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+  margin: 0% auto;
+  cursor: pointer;
+}
+
+.signUpForm form .cancelBook {
+  position: absolute;
+  transform: translate(100%, 100%);
+  left: 73%;
+  top: 82%;
+  background-color: #2699FB;
+  border-radius: 0.2rem;
+  padding: 0% 0.5rem;
+}
+
+.introBody {
+  background: #000;
+  overflow: hidden;
+}
+
+.introBody img {
+  object-fit: cover;
+  opacity: 0.4;
+  position: absolute;
+  z-index: -1;
+}
+
+.introNavBar {
+  height: 70px;
+  padding: 0 3vw;
+}
+
+.introNavBar * {
+  color: #fff;
+}
+
+.introNavBar_logo {
+  width: 15%;
+}
+
+.introNavBar_links {
+  width: 60%;
+}
+
+.introNavBar_links a {
+  font-size: 1.2rem;
+}
+
+.introNavBar_links a:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.middleText {
+  width: fit-content;
+  color: #fff;
+  font-size: 1.5rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 41%;
+  left: 50%;
+}
+
+.middleButton {
+  width: fit-content;
+  height: fit-content;
+}
+
+.middleButton a {
+  color: gray;
+  background-color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.3rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 49%;
+  left: 50%;
+}
+
+.storeNavBar {
+  background-color: #131921;
+  height: 8vh;
+  padding: 0 3vw;
+}
+
+.storeNavBar * {
+  color: #FFF;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.storeNavBar_logo {
+  width: 15%;
+}
+
+.storeNavBar_links {
+  width: 74%;
+}
+
+.storeNavBar_links a {
+  font-size: 1.2rem;
+}
+
+.storeNavBar_links a:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.storeNavBar_acount {
+  width: 15%;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.storeNavBar_acount #bagItems {
+  background-color: #131921;
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  position: absolute;
+  transform: translateX(75%);
+  left: 100%;
+  top: -15%;
+}
+
+.storeNavBar_acount #logout {
+  font-size: 1.1rem;
+}
+
+.storeNavBar_acount #bag {
+  position: relative;
+  cursor: pointer;
+}
+
+.storeNavBar_acount #bag::after {
+  content: "";
+  display: block;
+  float: right;
+  background-image: url("../app/frontOffice/assets/icons/bag.png");
+  width: 18px;
+  height: 18px;
+  background-size: cover;
+  position: absolute;
+  transform: translateX(20%);
+  left: 100%;
+  top: 10%;
+}
+
+.storeNavigation {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  height: 9vh;
+  padding: 0 3vw;
+  background-color: #232f3e;
+  color: #fff;
+}
+
+.storeNavigation_menu {
+  width: 4.4%;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-right: 4.5%;
+  cursor: pointer;
+}
+
+.storeNavigation_menu img {
+  width: 20px;
+}
+
+.storeNavigation_collections {
+  width: 13%;
+  margin-right: 42%;
+}
+
+.storeNavigation_collections a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.storeNavigation_searchBar {
+  width: 25%;
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+.storeNavigation_searchBar input {
+  width: 100%;
+  outline: none;
+}
+
+.storeNavigation_searchBar::after {
+  content: "";
+  display: block;
+  float: right;
+  background-image: url("../app/frontOffice/assets/icons/search.png");
+  width: 18px;
+  height: 18px;
+  background-size: cover;
+  position: absolute;
+  left: 93%;
+  top: 18%;
+  cursor: pointer;
+}
+
+.storeBooks {
+  min-height: 74vh;
+  padding: 1.5rem 2.5rem;
+}
+
+.storeBooks_book {
+  border: 1px solid #232f3e;
+  width: 15vw;
+  height: fit-content;
+  padding: 0.1rem 0.2rem;
+  position: relative;
+}
+
+.storeBooks_book:not(:last-child) {
+  margin-right: 0.8rem;
+}
+
+.storeBooks_book * {
+  padding: 0%;
+  margin: 0%;
+}
+
+.storeBooks_book_image {
+  height: 69%;
+  cursor: pointer;
+}
+
+.storeBooks_book_image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.storeBooks_book_name {
+  height: fit-content;
+  font-size: 1.05rem;
+}
+
+.storeBooks_book_author {
+  height: 8%;
+  font-size: 0.9rem;
+}
+
+.storeBooks_book_price {
+  height: 10%;
+  font-size: 1.1rem;
+}
+
+.footer {
+  height: 9vh;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  background-color: #232f3e;
+  color: #fff;
+}
+
+.storeSingleBook {
+  width: 72vw;
+  min-height: 74vh;
+  height: fit-content;
+  margin: 0% auto;
+}
+
+.storeSingleBook * {
+  margin: 0%;
+  padding: 0%;
+}
+
+.storeSingleBook_book {
+  border: 1px solid #232f3e;
+  height: fit-content;
+  width: 100%;
+  padding: 0.5%;
+  position: relative;
+}
+
+.storeSingleBook_book_image {
+  width: 15vw;
+  height: fit-content;
+  margin-right: 1.5rem;
+}
+
+.storeSingleBook_book_image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.storeSingleBook_book_details {
+  min-height: 39vh;
+  height: fit-content;
+  width: 70vw;
+}
+
+.storeSingleBook_book_details .name p {
+  font-size: 1.4rem;
+}
+
+.storeSingleBook_book_details .author {
+  margin-bottom: 1.5rem;
+}
+
+.storeSingleBook_book_details .description {
+  margin-bottom: 12%;
+}
+
+.storeSingleBook_book_details .description span {
+  margin-right: 0.6rem;
+  color: #131921;
+  font-style: italic;
+}
+
+.storeSingleBook_book_details .bookOptions {
+  border: 1px solid #232f3e;
+  width: fit-content;
+  padding: 0.3% 1.5%;
+  border-radius: 0.2rem;
+}
+
+.storeSingleBook_book_details .quantity {
+  position: absolute;
+  left: 90%;
+  top: 5%;
+  width: fit-content;
+  font-size: 1.2rem;
+  color: #007600;
+}
+
+.storeSingleBook_book_details .actionBtns {
+  width: 12vw;
+  position: absolute;
+  transform: translate(-108%, -135%);
+  left: 100%;
+  top: 100%;
+  cursor: pointer;
+}
+
+.storeSingleBook_book_details .actionBtns button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-weight: 300;
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 0;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.storeSingleBook_book_details .actionBtns .buyNow, .storeSingleBook_book_details .actionBtns .addToBag {
+  border: 1px solid #232f3e;
+  width: fit-content;
+  padding: 2% 5%;
+  border-radius: 0.2rem;
+  background-color: #232f3e;
+  color: #fff;
+  font-weight: 300;
+}
+
+.signupForm {
+  border: 1px solid #131921;
+  width: 40vw;
+  margin: 4vh auto;
+  padding-bottom: 1.5rem;
+  min-height: 66vh;
+}
+
+.signupForm h1 {
+  width: fit-content;
+}
+
+.signupForm form {
+  width: fit-content;
+}
+
+.signupForm form > div:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.signupForm form input {
+  width: 18vw;
+  border: 1px solid #131921;
+  border-radius: 0.2rem;
+}
+
+.signupForm form .gender > input {
+  width: 1vw;
+}
+
+.signupForm form .signUp button {
+  background-color: #232f3e;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0 1.5rem;
+  border-radius: 0.2rem;
+}
+
+.bagContainer .items {
+  padding: 0.5%;
+}
+
+.bagContainer .items * {
+  margin: 0%;
+  padding: 0%;
+}
+
+.bagContainer .items_item {
+  border: 1px solid #131921;
+  width: 65vw;
+  height: fit-content;
+  position: relative;
+}
+
+.bagContainer .items_item:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.bagContainer .items_item .image {
+  width: 7vw;
+  height: fit-content;
+  margin-right: 1.5rem;
+}
+
+.bagContainer .items_item .image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.bagContainer .items_item .details_name {
+  margin-top: 5%;
+}
+
+.bagContainer .items_item .details_name p {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.bagContainer .items_item .details_price {
+  position: absolute;
+  left: 95%;
+  top: 0%;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.bagContainer .items_item .details_price p {
+  color: #007600;
+}
+
+.bagContainer .items_item .actionBtns_delete {
+  position: absolute;
+  left: 35%;
+  top: 81.5%;
+}
+
+.bagContainer .items_item .actionBtns_delete a {
+  background-color: #232f3e;
+  color: #fff;
+  padding: 0% 15%;
+  border-radius: 0.2rem;
+}
+
+.bagContainer .items_item .actionBtns_quantity {
+  position: absolute;
+  left: 13%;
+  top: 80%;
+  width: fit-content;
+}
+
+.bagContainer .items_item .actionBtns_quantity form {
+  width: fit-content;
+}
+
+.bagContainer .items_item .actionBtns_quantity form input {
+  border: 2px solid #131921;
+  border-radius: 0.2rem;
+  width: 40%;
+}
+
+.bagContainer .totalPrice {
+  width: 35vw;
+  padding: 0.5%;
+  position: relative;
+}
+
+.bagContainer .totalPrice * {
+  margin: 0%;
+  padding: 0%;
+}
+
+.bagContainer .totalPrice .price {
+  border: 1px solid #131921;
+  height: 15vh;
+}
+
+.bagContainer .totalPrice .price p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.bagContainer .totalPrice .price #price {
+  color: #007600;
+  font-weight: 600;
+}
+
+.bagContainer .totalPrice .price #freeshipping {
+  position: absolute;
+  top: 25%;
+  font-size: 1rem;
+}
+
+.bagContainer .totalPrice .goToCheckout {
+  background-color: #232f3e;
+  width: fit-content;
+  padding: 1% 2%;
+  border-radius: 0.2rem;
+  position: absolute;
+  transform: translate(-50%, 0%);
+  left: 50%;
+  top: 35%;
+}
+
+.bagContainer .totalPrice .goToCheckout a {
+  width: fit-content;
+  color: #fff;
+}

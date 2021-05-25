@@ -1,0 +1,24 @@
+.navigation{
+    &_navBar{
+        border-bottom: 1px solid $primary-clr;
+        height: 70px;
+        padding: 0 2.5rem;
+        
+        h1{
+            font-weight: 400;
+            cursor: pointer;
+        }
+        h3{
+            font-weight: 300;
+            cursor: pointer;
+        }
+
+        &_websitePreview{
+            width: 10vw;
+
+            #logoutAdmin{
+                color: $primary-clr;
+            }
+        }
+    }
+}

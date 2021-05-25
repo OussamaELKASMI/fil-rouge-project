@@ -1,0 +1,43 @@
+.signupForm{
+    border: 1px solid $frontEnd-clr-drk;
+    width: 40vw;
+    margin: 4vh auto;
+    padding-bottom: 1.5rem;
+    min-height: 66vh;
+    h1{
+        width: fit-content;
+    }
+
+    form{
+        width: fit-content;
+
+        >div{
+
+            &:not(:last-child){
+                margin-bottom: 1rem;
+            }
+        }
+        input{
+            width: 18vw;
+            border: 1px solid $frontEnd-clr-drk;
+            border-radius: 0.2rem;
+        }
+
+        .gender{
+            >input{
+                width: 1vw;
+            }
+        }
+
+        .signUp{
+            button{
+                background-color: $frontEnd-clr;
+                color: #fff;
+                font-weight: 500;
+                font-size: 1.1rem;
+                padding: 0 1.5rem;
+                border-radius: 0.2rem;
+            }
+        }
+    }
+}

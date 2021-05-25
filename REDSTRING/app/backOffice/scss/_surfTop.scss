@@ -1,0 +1,69 @@
+.surf{
+    height: fit-content;
+    &_top{
+        height: 10vh;
+        width: 100%;
+        padding: 1rem 2.5rem;
+
+        .backArrow{
+            width: fit-content;
+            height: fit-content;
+            cursor: pointer;
+            img{
+                width: 60%;
+                height: 60%;
+            }
+        }
+
+        .current{
+            width: 30%;
+            p{
+                color: $primary-clr;
+                font-size: 1.1rem;
+                margin-left: 0.5rem;
+                text-transform: uppercase;
+            }
+        }
+
+        .searchBar{
+            width: 80%;
+            form{   
+                
+                input{
+                    border: 1px solid $primary-clr; 
+                    color: $primary-clr;
+                    outline: none;
+                }
+
+                ::placeholder{
+                    color: $primary-clr;
+                    opacity: 1;
+                }
+
+                button{
+                    float: right;
+                    height: 100%;
+                    width: fit-content;
+                    border: 1px solid $primary-clr;
+                    border-left: none;
+                    cursor: pointer;
+
+                    img{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+
+        .addIcon{
+            width: 5%;
+            height: 100%;
+            a{
+                img{
+                    width: 60%;
+                    height: 60%;
+                }
+            }
+        }
+    }
+}

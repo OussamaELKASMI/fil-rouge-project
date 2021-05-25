@@ -1,0 +1,74 @@
+.signUpForm{
+    border: 1px solid $primary-clr;
+    width: 30vw;
+    margin: 2% auto;
+    padding: 1% 0;
+    position: relative;
+
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+
+    h1{
+        font-size: 1.5rem;
+        color: $primary-clr;
+        margin-bottom: 0.5rem;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        input{
+            border: 1px solid $primary-clr;
+            outline: none;
+            text-align: center;
+        }
+
+        >div{
+            // width: 25%;
+            &:not(:last-child){
+                margin-bottom: 0.6rem;
+            }
+        }
+
+        .custom-file{
+           
+            label{
+                cursor: pointer;
+                background-color: lightgray;
+                border-radius: 0.2rem;
+                padding: 0 0.5rem;
+            }
+            
+            input{
+                background-color: transparent;
+                opacity: 0;
+                position: absolute;
+                z-index: -1;
+            }
+        }
+
+        button{
+            border: 1px solid $primary-clr;
+            background-color: $primary-clr;
+            border-radius: 0.2rem;
+            text-transform: uppercase;
+            font-size: 1rem;
+            padding: 0 0.5rem;
+            margin: 0% auto;
+            cursor: pointer;
+        }
+
+        .cancelBook{
+            position: absolute;
+            transform: translate(100%, 100%);
+            left: 73%;
+            top: 82%;
+            background-color: $primary-clr;
+            border-radius: 0.2rem;
+            padding: 0% 0.5rem;
+        }
+    }
+}
